@@ -1,8 +1,81 @@
 .header {
 
   &__background {
-    background-color: lightblue;
+    background-image: url('../images/wallhaven-xle163.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
     width: 100%;
     height: 90vh;
+  }
+
+  &__nav-container {
+    background-color: transparent 0%;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: $color-primary;
+    font-weight: 400;
+    font-family: $font-secondary;
+    font-size: 3.5rem;
+    padding: 0 1.5rem;
+    text-transform: uppercase;
+  }
+
+  &__menu {
+    padding: 0 1.5rem;
+  }
+
+  label {
+    font-size: 3rem;
+    line-height: 7rem;
+    cursor: pointer;
+  }
+
+  #toggle {
+    display: none;
+  }
+
+  // &__menu--menu {
+  //   text-align: center;
+  //   width: 100%;
+  // }
+
+  // &__menu--item {
+  //   text-decoration: none;
+  //   margin: 0 1rem;
+  //   line-height: 7rem;
+  //   color: $color-primary;
+  // }
+
+  &__greeting {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__greeting--name {
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+
+  &__greeting--info {
+    margin-top: 2.5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+  }
+
+  &__greeting--email {
+    margin-top: 2rem;
+    font-size: 1.5rem;
   }
 }
