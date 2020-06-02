@@ -1,0 +1,72 @@
+.aboutme {
+  color: $color-secondary;
+  font-size: 1.5rem;
+
+  &__container {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.mission {
+  background-color: #141414;
+  font-size: 1.5rem;
+
+  &__container {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+
+  &__heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.skills {
+  background-color: purple;
+  font-size: 1.5rem;
+
+  &__container {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.mywork {
+  color: $color-secondary;
+  font-size: 1.5rem;
+
+  &__container {
+    width: 75%;
+    text-align: center;
+    margin: 4rem auto;
+  }
+}
+
+.contact {
+  background-color: turquoise;
+  font-size: 1.5rem;
+
+  &__container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__second-heading {
+    font-size: 1.5rem;
+  }
+}

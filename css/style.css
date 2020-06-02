@@ -15,6 +15,76 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
+.u-heading-padding-top {
+  padding-top: 2rem; }
+
+.u-padding-bottom {
+  padding-bottom: 2rem; }
+
+.aboutme {
+  color: #000;
+  font-size: 1.5rem; }
+  .aboutme__container {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem; }
+  .aboutme__heading {
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+
+.mission {
+  background-color: #141414;
+  font-size: 1.5rem; }
+  .mission__container {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem; }
+  .mission__heading {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    padding-bottom: 2rem; }
+
+.skills {
+  background-color: purple;
+  font-size: 1.5rem; }
+  .skills__container {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto; }
+
+.mywork {
+  color: #000;
+  font-size: 1.5rem; }
+  .mywork__container {
+    width: 75%;
+    text-align: center;
+    margin: 4rem auto; }
+
+.contact {
+  background-color: turquoise;
+  font-size: 1.5rem; }
+  .contact__container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto; }
+  .contact__second-heading {
+    font-size: 1.5rem; }
+
+.footer {
+  background-color: #141414;
+  font-size: 1.5rem; }
+  .footer__links {
+    text-align: center; }
+  .footer__link:link, .footer__link:visited {
+    color: #fff;
+    text-decoration: none; }
+  .footer__copyright {
+    text-align: center;
+    font-size: 1rem; }
+
 .header__background {
   background-image: url("../images/wallhaven-xle163.jpg");
   background-repeat: no-repeat;
