@@ -61,7 +61,9 @@ body {
   .mywork__container {
     width: 75%;
     text-align: center;
-    margin: 4rem auto; }
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
 
 .contact {
   background-color: turquoise;
