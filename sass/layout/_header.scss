@@ -1,7 +1,7 @@
 .header {
 
   &__background {
-    background-image: url('../images/wallhaven-xle163.jpg');
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 20%, transparent), url('../images/wallhaven-xle163.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;

@@ -14,7 +14,11 @@
 }
 
 .mission {
-  background-color: #141414;
+  // background-color: #141414;
+  background-image: linear-gradient(to top left, rgba(20, 20, 20, 1.6) 50%, transparent), url('../images/subway.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
   font-size: $mobile-font-size;
 
   &__container {
@@ -31,7 +35,11 @@
 }
 
 .skills {
-  background-color: purple;
+  // background-color: purple;
+  background-image: linear-gradient(to top right,rgba(128, 0 , 128, 0.95)50%, transparent), url('../images/abstract-art.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
   font-size: $mobile-font-size;
 
   &__container {
@@ -47,6 +55,19 @@
     @include container;
     margin-top: 4rem;
     margin-bottom: 4rem;
+  }
+
+  &__container--links {
+    margin-top: 2rem;
+  }
+
+  &__link {
+    
+    img {
+      width: 50%;
+      border-radius: 15px;
+      box-shadow: 2px 2px 10px $color-secondary;
+    }
   }
 }
 
