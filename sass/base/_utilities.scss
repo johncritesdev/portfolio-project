@@ -5,3 +5,13 @@
 .u-padding-bottom {
   padding-bottom: 2rem;
 }
+
+//opacity on scroll
+.u-scroll-disappear {
+  transition: .5s;
+}
+
+.u-scroll-container-background {
+  background-color: $color-secondary;
+  transition: .5s;
+}

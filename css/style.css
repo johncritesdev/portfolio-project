@@ -21,6 +21,13 @@ body {
 .u-padding-bottom {
   padding-bottom: 2rem; }
 
+.u-scroll-disappear {
+  transition: .5s; }
+
+.u-scroll-container-background {
+  background-color: #000;
+  transition: .5s; }
+
 .aboutme {
   color: #000;
   font-size: 1.5rem; }
@@ -97,6 +104,17 @@ body {
     text-align: center;
     font-size: 1rem; }
 
+.contact__btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #6cc;
+  display: inline-block;
+  width: 50%;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 15px; }
+
 .header__background {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 20%, transparent), url("../images/wallhaven-xle163.jpg");
   background-repeat: no-repeat;
@@ -111,7 +129,17 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  position: fixed; }
+
+.header__nav-container--background {
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: -1; }
 
 .header__logo {
   color: #fff;
@@ -133,7 +161,12 @@ body {
   display: none; }
 
 .header__greeting {
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.header__greeting-container {
+  margin-top: 14rem;
   display: flex;
   flex-direction: column;
   align-items: center; }

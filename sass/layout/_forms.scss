@@ -1,0 +1,14 @@
+.contact {
+
+  &__btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-primary;
+    background-color: #6cc;
+    display: inline-block;
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+  }
+}
