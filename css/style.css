@@ -1,3 +1,20 @@
+/*
+0-600px: mobile
+600 - 900px: tablet portrait
+900 - 1200px: tablet landscape
+[1200px-1800px] is where our normal styles are applied
+subjective(1800px + :  desktop) may not use
+
+$breakpoint argument choices:
+-sm-phone
+-md-phone
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER: Base + typography > general layout + grid page layout > components 
+*/
 *,
 *::before,
 *::after {
@@ -15,174 +32,12 @@ body {
   font-weight: 300;
   line-height: 1.6; }
 
-.u-heading-padding-top {
-  padding-top: 2rem; }
-
-.u-padding-bottom {
-  padding-bottom: 2rem; }
-
-.u-scroll-disappear {
-  transition: .5s; }
-
-.u-scroll-container-background {
-  background-color: #000;
-  transition: .5s; }
-
-.aboutme {
-  color: #000;
-  font-size: 1.5rem; }
-  .aboutme__container {
-    width: 75%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 4rem; }
-  .aboutme__heading {
-    text-transform: uppercase;
-    letter-spacing: 2px; }
-
-.mission {
-  background-image: linear-gradient(to top left, #141414 50%, transparent), url("../images/subway.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 1.5rem; }
-  .mission__container {
-    width: 75%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 4rem; }
-  .mission__heading {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 2rem;
-    padding-bottom: 2rem; }
-
-.skills {
-  background-image: linear-gradient(to top right, rgba(128, 0, 128, 0.95) 50%, transparent), url("../images/abstract-art.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-size: 1.5rem; }
-  .skills__container {
-    width: 75%;
-    text-align: center;
-    margin: 0 auto; }
-
-.mywork {
-  color: #000;
-  font-size: 1.5rem; }
-  .mywork__container {
-    width: 75%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem; }
-  .mywork__container--links {
-    margin-top: 2rem; }
-  .mywork__link img {
-    width: 50%;
-    border-radius: 15px;
-    box-shadow: 2px 2px 10px #000; }
-
-.contact {
-  background-color: turquoise;
-  font-size: 1.5rem; }
-  .contact__container {
-    width: 80%;
-    text-align: center;
-    margin: 0 auto; }
-  .contact__second-heading {
-    font-size: 1.5rem; }
-
-.footer {
-  background-color: #141414;
-  font-size: 1.5rem; }
-  .footer__links {
-    text-align: center; }
-  .footer__link:link, .footer__link:visited {
-    color: #fff;
-    text-decoration: none; }
-  .footer__copyright {
-    text-align: center;
-    font-size: 1rem; }
-
-.contact__btn {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
-  background-color: #6cc;
-  display: inline-block;
-  width: 50%;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 15px; }
-
-.header__background {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 20%, transparent), url("../images/wallhaven-xle163.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center right;
-  width: 100%;
-  height: 90vh; }
-
-.header__nav-container {
-  background-color: transparent 0%;
-  height: 10rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.background-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: orangered;
+  z-index: -1;
   position: fixed; }
-
-.header__nav-container--background {
-  height: 10rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  z-index: -1; }
-
-.header__logo {
-  color: #fff;
-  font-weight: 400;
-  font-family: "Righteous", cursive;
-  font-size: 3.5rem;
-  padding: 0 1.5rem;
-  text-transform: uppercase; }
-
-.header__menu {
-  padding: 0 1.5rem; }
-
-.header label {
-  font-size: 3rem;
-  line-height: 7rem;
-  cursor: pointer; }
-
-.header #toggle {
-  display: none; }
-
-.header__greeting {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.header__greeting-container {
-  margin-top: 14rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.header__greeting--name {
-  margin-top: 4rem;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 1.5px; }
-
-.header__greeting--info {
-  margin-top: 2.5rem;
-  font-size: 3rem;
-  font-weight: 400;
-  letter-spacing: 1.5px; }
-
-.header__greeting--email {
-  margin-top: 2rem;
-  font-size: 1.5rem; }
+  .background-container__img {
+    width: 100%;
+    height: 100%; }
