@@ -1,0 +1,27 @@
+.navigation {
+  width: 100vw;
+  height: 50vh;
+  position: absolute;
+  top: 50vh;
+  background: linear-gradient(to bottom, transparent, #000 30%);
+  z-index: 2;
+
+  &__heading {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 5rem;
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+      margin-top: 2.5rem;
+    }
+
+    @include respond(md-phone) {
+      margin-top: 3.5rem;
+    }
+
+    @include respond(sm-phone) {
+      margin-top: 4.5rem;
+    }
+  }
+}
