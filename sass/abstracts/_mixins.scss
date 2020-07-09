@@ -61,3 +61,11 @@ ORDER: Base + typography > general layout + grid page layout > components
     };
   }
 }
+
+@mixin btnUp() {
+  transform: translateY(-7px);
+}
+
+@mixin btnPushed() {
+  transform: translateY(-1px);
+}
