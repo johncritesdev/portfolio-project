@@ -1,0 +1,165 @@
+.navigation {
+
+  &__btn--container {
+    height: 10rem;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(big-desktop) {
+      margin-top: 12rem;
+    }
+
+    @include respond(md-desktop) {
+      margin-top: 15rem;
+    }
+
+    @include respond(tab-land-1) {
+      margin-top: 4rem;
+    }
+
+    @include respond(tablet-3) {
+      margin-top: 1rem; 
+    }
+
+    @include respond(tablet-2) {
+      margin-top: 1rem; 
+    }
+
+    @include respond(tablet) {
+      height: 35rem;
+    }
+
+    @include respond(tablet-1) {
+      margin-top: 1.5rem;
+      flex-direction: row;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 28rem;
+      margin-top: 5rem;
+    }
+
+    @include respond(phone-1) {
+      flex-direction: row;
+      margin-top: 0;
+    }
+
+    @include respond(phone-2) {
+      flex-direction: column;
+      height: 22rem;
+      margin-top: 5rem;
+    }
+
+    @include respond(md-phone) {
+      height: 20rem;
+    }
+
+    @include respond(sm-phone-1) {
+      margin-top: 2rem;
+      height: 20rem;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
+  }
+
+  &__btn:link,
+  &__btn:visited {
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: $font-primary;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 25rem;
+    padding: 2rem 0;
+    margin: 0 2.5rem;
+    transition: 0.5s;
+    border-radius: 15px;
+
+    @include respond(tablet-2) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(tablet-1) {
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+    }
+
+    @include respond(md-phone) {
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+    }
+
+    @include respond(phone-1) {
+      font-size: 1rem;
+    }
+
+    @include respond(phone-3) {
+      font-size: .5rem;
+    }
+  }
+
+  &__btn-color--neonblue {
+    color: #000;
+    background-color: #03e9f4;
+
+    &:hover {
+      @include btnUp;
+      background: #03e9f4;
+      color: #000;
+      box-shadow: 0 0 .5rem #03e9f4,
+                  0 0 2.5rem #03e9f4,
+                  0 0 5rem #03e9f4,
+                  0 0 20rem #03e9f4;
+    }
+
+    &:active {
+      @include btnPushed;
+    }
+  }
+
+  &__btn-color--neonpink {
+    color: #000;
+    background-color: #f706cf;
+
+    &:hover {
+      @include btnUp;
+      background: #f706cf;
+      color: #000;
+      box-shadow: 0 0 .5rem #f706cf,
+                  0 0 2.5rem #f706cf,
+                  0 0 5rem #f706cf,
+                  0 0 20rem #f706cf;
+    }
+
+    &:active {
+      @include btnPushed;
+    }
+  }
+
+  &__btn-color--neonpurple {
+    color: #000;
+    background-color: #c852ec;
+
+    &:hover {
+      @include btnUp;
+      background: #c852ec;
+      color: #000;
+      box-shadow: 0 0 .5rem #c852ec,
+                  0 0 2.5rem #c852ec,
+                  0 0 5rem #c852ec,
+                  0 0 20rem #c852ec;
+    }
+
+    &:active {
+      @include btnPushed;
+    }
+  }
+}

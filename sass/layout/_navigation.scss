@@ -6,22 +6,62 @@
   background: linear-gradient(to bottom, transparent, #000 30%);
   z-index: 2;
 
+  @include respond(tablet) {
+    background: linear-gradient(to bottom, transparent, #000 20%);
+  }
+
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__heading {
     text-align: center;
     font-size: 3.5rem;
     margin-top: 5rem;
 
+    @include respond(big-desktop) {
+      margin-top: 8rem;
+    }
+
+    @include respond(md-desktop) {
+      margin-top: 7rem;
+    }
+
+    @include respond(tab-land-1) {
+      margin-top: 10rem;
+    }
+
+    @include respond(tablet-3) {
+      margin-top: 1.5rem; 
+    }
+
+    @include respond(tablet) {
+      margin-top: 0;
+    }
+
+    @include respond(tablet-1) {
+      margin-top: 1rem;
+    }
+
     @include respond(phone) {
       font-size: 2.5rem;
-      margin-top: 2.5rem;
+      margin-top: 1.5rem;
     }
 
     @include respond(md-phone) {
-      margin-top: 3.5rem;
+      margin-top: 2rem;
     }
 
     @include respond(sm-phone) {
-      margin-top: 4.5rem;
+      margin-top: .5rem;
+    }
+
+    @include respond(sm-phone-1) {
+      margin-top: 1rem;
+      font-size: 2rem;
     }
   }
 }

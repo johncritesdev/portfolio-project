@@ -22,6 +22,14 @@ ORDER: Base + typography > general layout + grid page layout > components
 //change to mobile first
 
 @mixin respond($breakpoint) {
+
+  @if $breakpoint == sm-phone-1 {
+    //320px
+    @media (max-width: 20em) {
+      @content
+    };
+  }
+
   @if $breakpoint == sm-phone {
     //370px
     @media (max-width: 23.5em) {
@@ -36,15 +44,73 @@ ORDER: Base + typography > general layout + grid page layout > components
     };
   }
 
+  @if $breakpoint == phone-2 {
+    //432px
+    @media (max-width: 27em) {
+      @content
+    };
+  }
+
+  @if $breakpoint == phone-3 {
+    //504px
+    @media (max-width: 31.5em) {
+      @content
+    };
+  }
+  @if $breakpoint == phone-1 {
+    //568px
+    @media (max-width: 35.5em) {
+      @content
+    };
+  }
+
   @if $breakpoint == phone {
     //600px
     @media (max-width: 37.5em) {
       @content
     };
   }
+  @if $breakpoint == tablet-1 {
+    //640px
+    @media (max-width: 40em) {
+      @content
+    };
+  }
+  @if $breakpoint == iphone-land {
+    //667px
+    @media (max-width: 41.5em) {
+      @content
+    };
+  }
+  @if $breakpoint == tablet {
+    //720px
+    @media (max-width: 45em) {
+      @content
+    };
+  }
+  @if $breakpoint == tablet-2 {
+    //731px
+    @media (max-width: 46em) {
+      @content
+    };
+  }
+
+  @if $breakpoint == tablet-3 {
+    //823px
+    @media (max-width: 51.5em) {
+      @content
+    };
+  }
+
   @if $breakpoint == tab-port {
     //900px
     @media (max-width: 56.25em) {
+      @content
+    };
+  }
+  @if $breakpoint == tab-land-1 {
+    //1024px
+    @media (max-width: 64em) {
       @content
     };
   }
@@ -54,10 +120,25 @@ ORDER: Base + typography > general layout + grid page layout > components
       @content
     };
   }
+
+  @if $breakpoint == md-desktop {
+    //1680
+    @media (min-width: 105em) {
+      @content
+    };
+  }
   @if $breakpoint == big-desktop {
     //1800px
     @media (min-width: 112.5em) {
       @content
     };
   }
+}
+
+@mixin btnUp() {
+  transform: translateY(-7px);
+}
+
+@mixin btnPushed() {
+  transform: translateY(-1px);
 }
