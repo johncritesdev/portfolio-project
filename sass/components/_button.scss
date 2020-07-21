@@ -6,6 +6,66 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include respond(big-desktop) {
+      margin-top: 12rem;
+    }
+
+    @include respond(md-desktop) {
+      margin-top: 15rem;
+    }
+
+    @include respond(tab-land-1) {
+      margin-top: 4rem;
+    }
+
+    @include respond(tablet-3) {
+      margin-top: 1rem; 
+    }
+
+    @include respond(tablet-2) {
+      margin-top: 1rem; 
+    }
+
+    @include respond(tablet) {
+      height: 35rem;
+    }
+
+    @include respond(tablet-1) {
+      margin-top: 1.5rem;
+      flex-direction: row;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: space-between;
+      height: 28rem;
+      margin-top: 5rem;
+    }
+
+    @include respond(phone-1) {
+      flex-direction: row;
+      margin-top: 0;
+    }
+
+    @include respond(phone-2) {
+      flex-direction: column;
+      height: 22rem;
+      margin-top: 5rem;
+    }
+
+    @include respond(md-phone) {
+      height: 20rem;
+    }
+
+    @include respond(sm-phone-1) {
+      margin-top: 2rem;
+      height: 20rem;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+    }
   }
 
   &__btn:link,
@@ -22,6 +82,28 @@
     margin: 0 2.5rem;
     transition: 0.5s;
     border-radius: 15px;
+
+    @include respond(tablet-2) {
+      font-size: 1.5rem;
+    }
+
+    @include respond(tablet-1) {
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+    }
+
+    @include respond(md-phone) {
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+    }
+
+    @include respond(phone-1) {
+      font-size: 1rem;
+    }
+
+    @include respond(phone-3) {
+      font-size: .5rem;
+    }
   }
 
   &__btn-color--neonblue {
