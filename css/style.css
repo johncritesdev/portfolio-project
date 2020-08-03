@@ -14,6 +14,30 @@ $breakpoint argument choices:
 -big-desktop
 
 ORDER: Base + typography > general layout + grid page layout > components 
+
+320 x 480 - 568 +
+370 x 640 +
+390 x 390
+414 x 736 +
+420 x 690 +
+432 x 768 +
+504 x 504 +
+568 x 320 +
+600 x 960 - 1024 +
+604 x 966 +
+640 x 360 +
+667 x 375 +
+720 x 1280 +
+731 x 411 +
+768 x 1024 +
+812 x 375 +
+823 x 411 +
+900 x 600 +
+1024 x 768 +
+1200 +
+1680 +
+1800 +
+
 */
 *,
 *::before,
@@ -80,7 +104,8 @@ body {
       height: 20rem; } }
   @media (max-width: 20em) {
     .navigation__btn--container {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
       height: 20rem; } }
   @media (max-width: 56.25em) {
     .navigation__btn--container {
@@ -164,6 +189,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   align-items: center;
   text-align: center; }
   .header__heading-1 {
@@ -180,6 +206,136 @@ body {
     @media (max-width: 26.25em) {
       .header__heading-2 {
         margin-bottom: 7rem; } }
+
+.header-about {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  height: 65vh;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .header-about__heading-3--about {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 2rem; }
+    @media (max-width: 37.75em) {
+      .header-about__heading-3--about {
+        top: 3.5rem; } }
+    @media (max-width: 37.5em) {
+      .header-about__heading-3--about {
+        top: 3rem; } }
+    @media (max-width: 20em) {
+      .header-about__heading-3--about {
+        top: .5rem; } }
+  .header-about__para {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    width: 70%;
+    text-align: justify;
+    position: absolute;
+    top: 16rem; }
+    @media (min-width: 105em) {
+      .header-about__para {
+        font-size: 2.2rem;
+        line-height: 5rem;
+        width: 60%;
+        z-index: 3; } }
+    @media (max-width: 64em) {
+      .header-about__para {
+        font-size: 1.8rem;
+        line-height: 4.5rem;
+        width: 80%;
+        top: 15rem;
+        z-index: 3; } }
+    @media (max-width: 56.25em) {
+      .header-about__para {
+        font-size: 1.4rem;
+        line-height: 4rem;
+        top: 14rem; } }
+    @media (max-width: 51.5em) {
+      .header-about__para {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        width: 85%;
+        top: 9rem; } }
+    @media (max-width: 50.75em) {
+      .header-about__para {
+        line-height: 2.3rem; } }
+    @media (max-width: 48em) {
+      .header-about__para {
+        font-size: 2rem;
+        line-height: 3.5rem;
+        top: 17rem; } }
+    @media (max-width: 46em) {
+      .header-about__para {
+        font-size: 1.2rem;
+        line-height: 2.3rem;
+        top: 10rem; } }
+    @media (max-width: 45em) {
+      .header-about__para {
+        font-size: 2.3rem;
+        line-height: 5rem;
+        top: 15rem; } }
+    @media (max-width: 41.688em) {
+      .header-about__para {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        top: 8.5rem; } }
+    @media (max-width: 40em) {
+      .header-about__para {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        top: 8rem; } }
+    @media (max-width: 37.75em) {
+      .header-about__para {
+        font-size: 2rem;
+        line-height: 3.2rem;
+        width: 75%;
+        top: 15rem; } }
+    @media (max-width: 37.5em) {
+      .header-about__para {
+        font-size: 1.8rem;
+        line-height: 3rem;
+        top: 12rem; } }
+    @media (max-width: 35.5em) {
+      .header-about__para {
+        font-size: 1rem;
+        line-height: 2rem;
+        width: 90%;
+        top: 7.5rem; } }
+    @media (max-width: 31.5em) {
+      .header-about__para {
+        font-size: 1.2rem;
+        line-height: 2.5rem;
+        width: 90%;
+        top: 10rem; } }
+    @media (max-width: 27em) {
+      .header-about__para {
+        font-size: 1.6rem;
+        line-height: 2.3rem; } }
+    @media (max-width: 25.875em) {
+      .header-about__para {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        top: 12rem; } }
+    @media (max-width: 23.5em) {
+      .header-about__para {
+        font-size: 1.4rem;
+        letter-spacing: 0;
+        line-height: 1.8rem;
+        top: 12rem; } }
+    @media (max-width: 20em) {
+      .header-about__para {
+        font-size: 1.1rem;
+        letter-spacing: 0;
+        line-height: 1.5rem;
+        width: 85%;
+        top: 7rem;
+        z-index: 3; } }
 
 .navigation {
   width: 100vw;
