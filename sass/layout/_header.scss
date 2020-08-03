@@ -1,10 +1,6 @@
 .header {
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  @include navBackground;
+  
 
   &__heading-1 {
     font-size: 3.5rem;
@@ -24,6 +20,156 @@
 
     @include respond(md-phone) {
       margin-bottom: 7rem;
+    }
+  }
+}
+
+.header-about {
+  @include navBackground;
+  height: 65vh;
+  background-color: rgba($color: #000000, $alpha: .7);
+
+  &__heading-3--about {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 2rem;
+
+    @include respond(phone-4) {
+      top: 3.5rem;
+    }
+
+    @include respond(phone) {
+      top: 3rem;
+    }
+
+    @include respond(sm-phone-1) {
+      top: .5rem;
+    }
+  }
+
+  &__para {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    width: 70%;
+    text-align: justify;
+    position: absolute;
+    top: 16rem;
+
+    @include respond(md-desktop) {
+      font-size: 2.2rem;
+      line-height: 5rem;
+      width: 60%;
+      z-index: 3;
+    }
+
+    @include respond(tab-land-1) {
+      font-size: 1.8rem;
+      line-height: 4.5rem;
+      width: 80%;
+      top: 15rem;
+      z-index: 3;
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+      line-height: 4rem;
+      top: 14rem;
+    }
+
+    @include respond(tablet-3) {
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      width: 85%;
+      top: 9rem;
+    }
+
+    @include respond(tablet-4) {
+      line-height: 2.3rem;
+    }
+
+    @include respond(ipad) {
+      font-size: 2rem;
+      line-height: 3.5rem;
+      top: 17rem;
+    }
+
+    @include respond(tablet-2) {
+      font-size: 1.2rem;
+      line-height: 2.3rem;
+      top: 10rem;
+    }
+
+    @include respond(tablet) {
+      font-size: 2.3rem;
+      line-height: 5rem;
+      top: 15rem;
+    }
+
+    @include respond(iphone-land) {
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      top: 8.5rem;
+    }
+
+    @include respond(tablet-1) {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      top: 8rem;
+    }
+
+    @include respond(phone-4) {
+      font-size: 2rem;
+      line-height: 3.2rem;
+      width: 75%;
+      top: 15rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      top: 12rem;
+    }
+
+    @include respond(phone-1) {
+      font-size: 1rem;
+      line-height: 2rem;
+      width: 90%;
+      top: 7.5rem;
+    }
+
+    @include respond(phone-3) {
+      font-size: 1.2rem;
+      line-height: 2.5rem;
+      width: 90%;
+      top: 10rem;
+    }
+
+    @include respond(phone-2) {
+      font-size: 1.6rem;
+      line-height: 2.3rem;
+    }
+
+    @include respond(sm-phone-2) {
+      font-size: 1.5rem;
+      line-height: 2rem;
+      top: 12rem;
+    }
+
+    @include respond(sm-phone) {
+      font-size: 1.4rem;
+      letter-spacing: 0;
+      line-height: 1.8rem;
+      top: 12rem;
+    }
+
+    @include respond(sm-phone-1) {
+      font-size: 1.1rem;
+      letter-spacing: 0;
+      line-height: 1.5rem;
+      width: 85%;
+      top: 7rem;
+      z-index: 3;
     }
   }
 }
