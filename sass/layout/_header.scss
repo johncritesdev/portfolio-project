@@ -173,3 +173,278 @@
     }
   }
 }
+
+.header-work {
+  @include navBackground;
+
+  &__heading-3--work {
+    font-size: 3.5rem;
+    position: absolute;
+    top: 2rem; 
+
+    @include respond(tablet-3) {
+     font-size: 2.5rem; 
+    }
+
+    @include respond(tablet-4) {
+      font-size: 2rem;
+      top: 1.3rem;
+    }
+
+    @include respond(ipad) {
+      top: 5rem;
+      font-size: 3.5rem;
+    }
+
+    @include respond(tablet-2) {
+      font-size: 2rem;
+      top: 1.3rem;
+    }
+
+    @include respond(tablet) {
+      top: 5rem;
+      font-size: 3.5rem;
+    }
+
+    @include respond(iphone-land) {
+      font-size: 2rem;
+      top: 1.3rem;
+    }
+
+    @include respond(phone) {
+      font-size: 3rem;
+      top: 4rem;
+    }
+
+    @include respond(phone-1) {
+      font-size: 2rem;
+      top: 1rem;
+    }
+
+    @include respond(phone-3) {
+      top: 2.5rem;
+    }
+
+    @include respond(phone-2) {
+      top: 4rem;
+    }
+
+    @include respond(sm-phone-1) {
+      top: 2rem;
+    }
+  }
+
+  &__app-container {
+    position: absolute;
+    top: 9rem;
+    width: 60rem;
+    height: 40rem;
+    background-color: rgba($color: #000000, $alpha: .7);
+    box-shadow: 0px 0px 15px rgb(255, 255, 255);
+    z-index: 3;
+
+    @include respond(tab-land-1) {
+      top: 11rem;
+    }
+
+    @include respond(tab-port) {
+      height: 35rem;
+    }
+
+    @include respond(tablet-3) {
+      top: 7rem;
+      height: 21rem;
+    }
+
+    @include respond(tablet-4) {
+      top: 5.5rem;
+      width: 55rem;
+      height: 20rem;
+    }
+
+    @include respond(ipad) {
+      top: 25rem;
+      height: 30rem;
+    }
+
+    @include respond(tablet-2) {
+      top: 7rem;
+      height: 20rem;
+    }
+
+    @include respond(tablet) {
+      top: 30rem;
+      height: 35rem;
+    }
+
+    @include respond(iphone-land) {
+      top: 5.5rem;
+      height: 20rem;
+    }
+
+    @include respond(tablet-1) {
+      width: 50rem;
+    }
+
+    @include respond(phone-4) {
+      top: 23rem;
+      height: 30rem;
+    }
+
+    @include respond(phone) {
+      top: 18rem;
+      width: 35rem;
+    }
+
+    @include respond(phone-1) {
+      top: 5rem;
+      height: 17rem;
+      width: 40rem;
+    }
+
+    @include respond(phone-3) {
+      top: 10rem;
+      width: 35rem;
+      height: 20rem;
+    }
+
+    @include respond(phone-2) {
+      top: 15rem;
+      height: 25rem;
+      width: 35rem;
+    }
+
+    @include respond(sm-phone) {
+      top: 12rem;
+      width: 30rem;
+    }
+
+    @include respond(sm-phone-1) {
+      top: 7rem;
+      width: 27rem;
+      height: 20rem;
+    }
+
+    &--link {
+      text-decoration: none;
+    }
+
+      &--btn {
+        width: 15rem;
+        height: 15rem;
+        background-image: url('../../images/website-pic.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        margin: 0 auto;
+        margin-top: 8rem;
+        transition: .5s;
+
+        &:hover {
+          @include btnUp;
+        }
+
+        &:active {
+        @include btnPushed;
+    }
+
+      @include respond(tablet-3) {
+        width: 11rem;
+        height: 11rem;
+        margin-top: 3rem;
+      }
+
+      @include respond(tablet-4) {
+        width: 10rem;
+        height: 10rem;
+      }
+
+      @include respond(ipad) {
+        width: 12rem;
+        height: 12rem;
+        margin-top: 6rem;
+      }
+
+      @include respond(tablet-2) {
+        width: 9rem;
+        height: 9rem;
+        margin-top: 4rem;
+      }
+
+      @include respond(tablet) {
+        width: 14rem;
+        height: 14rem;
+        margin-top: 8rem;
+      }
+
+      @include respond(iphone-land) {
+        width: 10rem;
+        height: 10rem;
+        margin-top: 4rem;
+      }
+
+      @include respond(phone-4) {
+        width: 13rem;
+        height: 13rem;
+        margin-top: 7rem;
+      }
+
+      @include respond(phone-1) {
+        width: 10rem;
+        height: 10rem;
+        margin-top: 2.5rem;
+      }
+
+      @include respond(phone-3) {
+        width: 13rem;
+        height: 13rem;
+        margin-top: 2.5rem;
+      }
+
+      @include respond(phone-2) {
+        margin-top: 4rem;
+      }
+
+      @include respond(sm-phone-1) {
+        margin-top: 2.5rem;
+      }
+    }
+
+      h3 {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        color: $color-primary;
+
+        @include respond(tablet-4) {
+          font-size: 1.2rem;
+        }
+
+        @include respond(ipad) {
+          font-size: 1.5rem;
+        }
+
+        @include respond(tablet-2) {
+          font-size: 1.2rem;
+        }
+
+        @include respond(tablet) {
+          font-size: 1.8rem;
+        }
+
+        @include respond(iphone-land) {
+          font-size: 1.5rem;
+        }
+
+        @include respond(phone-4) {
+          font-size: 2rem;
+        }
+
+        @include respond(phone-1) {
+          font-size: 1.3rem;
+          margin-top: 1rem;
+        }
+      }
+  }
+}
