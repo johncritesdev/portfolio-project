@@ -15,28 +15,30 @@ $breakpoint argument choices:
 
 ORDER: Base + typography > general layout + grid page layout > components 
 
-320 x 480 - 568 ++
-370 x 640 ++
+320 x 480 - 568 +++
+370 x 640 +++
 390 x 390
-414 x 736 ++
-420 x 690 ++
-432 x 768 ++
-504 x 504 ++
-568 x 320 ++
-600 x 960 - 1024 ++
-604 x 966 ++
-640 x 360 ++
-667 x 375 ++
-720 x 1280 ++
-731 x 411 ++
-768 x 1024 ++
-812 x 375 ++
-823 x 411 ++
-900 x 600 ++
-1024 x 768 ++
-1200 +
-1680 +
-1800 +
+414 x 736 +++
+420 x 690 +++
+432 x 768 +++
+504 x 504 +++
+568 x 320 +++
+600 x 960 - 1024 +++
+604 x 966 +++
+640 x 360 +++
+667 x 375 +++
+720 x 1280 +++
+731 x 411 +++
+768 x 1024 +++
+812 x 375 +++
+823 x 411 +++
+900 x 600 +++
+1024 x 768 +++
+1200 x 800 +++
+1680 x 1050 +++
+1800 x 1080 +++
+1024 x 1366 +++
+1366 x 1024 ++ 
 
 */
 *,
@@ -55,6 +57,11 @@ body {
   color: #fff;
   font-weight: 300;
   line-height: 1.6; }
+
+.u-center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .navigation__btn--container {
   height: 10rem;
@@ -393,13 +400,23 @@ body {
     position: absolute;
     top: 9rem;
     width: 60rem;
-    height: 40rem;
+    height: 35rem;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0px 0px 15px white;
     z-index: 3; }
+    @media (max-width: 85.375em) {
+      .header-work__app-container {
+        top: 17rem; } }
+    @media (min-width: 105em) {
+      .header-work__app-container {
+        top: 28rem;
+        width: 80rem; } }
+    @media (max-width: 75em) {
+      .header-work__app-container {
+        top: 15rem; } }
     @media (max-width: 64em) {
       .header-work__app-container {
-        top: 11rem; } }
+        top: 25rem; } }
     @media (max-width: 56.25em) {
       .header-work__app-container {
         height: 35rem; } }
@@ -480,6 +497,11 @@ body {
         transform: translateY(-7px); }
       .header-work__app-container--btn:active {
         transform: translateY(-1px); }
+      @media (min-width: 105em) {
+        .header-work__app-container--btn {
+          width: 18rem;
+          height: 18rem;
+          margin-top: 8rem; } }
       @media (max-width: 51.5em) {
         .header-work__app-container--btn {
           width: 11rem;
@@ -535,6 +557,9 @@ body {
       font-size: 1.5rem;
       letter-spacing: 1px;
       color: #fff; }
+      @media (min-width: 105em) {
+        .header-work__app-container h3 {
+          font-size: 2rem; } }
       @media (max-width: 50.75em) {
         .header-work__app-container h3 {
           font-size: 1.2rem; } }
@@ -557,6 +582,80 @@ body {
         .header-work__app-container h3 {
           font-size: 1.3rem;
           margin-top: 1rem; } }
+    @media (max-width: 85.375em) {
+      .header-work__app-container--contact {
+        top: 17rem; } }
+    @media (max-width: 75em) {
+      .header-work__app-container--contact {
+        top: 14.5rem; } }
+    @media (max-width: 64em) {
+      .header-work__app-container--contact {
+        top: 25rem; } }
+    @media (max-width: 51.5em) {
+      .header-work__app-container--contact {
+        top: 7.5rem; } }
+    @media (max-width: 50.75em) {
+      .header-work__app-container--contact {
+        top: 5.8rem; } }
+    @media (max-width: 48em) {
+      .header-work__app-container--contact {
+        top: 25rem; } }
+    @media (max-width: 46em) {
+      .header-work__app-container--contact {
+        top: 7rem; } }
+    @media (max-width: 41.688em) {
+      .header-work__app-container--contact {
+        top: 5.5rem; } }
+    @media (max-width: 40em) {
+      .header-work__app-container--contact {
+        top: 6rem; } }
+    @media (max-width: 35.5em) {
+      .header-work__app-container--contact {
+        top: 6rem;
+        height: 15rem; } }
+    @media (max-width: 31.5em) {
+      .header-work__app-container--contact {
+        top: 12rem;
+        height: 17rem; } }
+    @media (max-width: 27em) {
+      .header-work__app-container--contact {
+        top: 17rem;
+        height: 19rem; } }
+    @media (max-width: 26.25em) {
+      .header-work__app-container--contact {
+        top: 15rem; } }
+    @media (max-width: 25.875em) {
+      .header-work__app-container--contact {
+        top: 17rem;
+        width: 28rem; } }
+    @media (max-width: 23.5em) {
+      .header-work__app-container--contact {
+        top: 14rem;
+        width: 26rem; } }
+    @media (max-width: 20em) {
+      .header-work__app-container--contact {
+        top: 7.5rem;
+        width: 25rem; } }
+
+.contact {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 3rem;
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  transition: .5s; }
+  @media (max-width: 35.5em) {
+    .contact {
+      font-size: 1.5rem;
+      padding: 1rem 2rem; } }
+
+.contact:hover {
+  transform: translateY(-7px); }
+
+.contact:active {
+  transform: translateY(-1px); }
 
 .navigation {
   width: 100vw;
