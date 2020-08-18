@@ -485,7 +485,7 @@ body {
     .header-work__app-container--btn {
       width: 15rem;
       height: 15rem;
-      background-image: url("../../images/website-pic.png");
+      background-image: url("../images/website-pic.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
